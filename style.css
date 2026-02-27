@@ -465,5 +465,17 @@ span {
   .timeline-box:nth-child(2n + 1)::after {
     left: -9%;
   }
+  .foot-link{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  .foot-link .social-media-link{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
+
 
