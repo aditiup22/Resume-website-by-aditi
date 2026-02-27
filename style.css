@@ -334,11 +334,22 @@ span {
   font-weight: 100;
   font-size: 0.9rem;
 }
+.foot-link{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .social-media-link {
+    width: 25vw;
   display: flex;
   justify-content: space-evenly;
 }
+.social-media-link li {
+    list-style: none;
+}
 .social-media-link li a i {
+    font-size: 1.5rem;
   border-radius: 50%;
   padding: 0.3rem;
   color: white;
@@ -455,3 +466,4 @@ span {
     left: -9%;
   }
 }
+
