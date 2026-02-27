@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#body-header {
+  height: 65vh;
+  background-image: url(./image/macbook_mouse.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  opacity: 0.8;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.horizontal-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.nav-menu li a {
+  transition: color 0.5z border-bottom 4s;
+}
+.horizontal-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.7rem;
+}
+.nav-menu li a:hover {
+  color: lightgray;
+  border-bottom: 1px solid black;
+}
+.text-center {
+  text-align: center;
+}
+.name-social-container {
+  margin-top: 20vh;
+}
+#my-name {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.social-icons li a i {
+  border-radius: 50%;
+  padding: 0.3rem;
+  color: white;
+  opacity: 0.9;
+}
+.social-icons li a i:hover {
+  box-shadow: 0px 0px 20px white;
+  opacity: 0.9;
+}
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section:nth-child(2n) {
+  background-color: #9e9b9b29;
+}
+section:nth-child(2n + 1) {
+  background-color: white;
+}
+
+/* About */
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.profile-img {
+  width: 12rem;
+  height: 12rem;
+  margin: auto;
+  margin-top: -17vh;
+}
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#about p {
+  padding: 0.5rem;
+}
+.section-heading {
+  width: auto;
+  padding: 20px 10px 10px;
+  font-weight: 400;
+}
+.section-heading span {
+  font-size: 40px;
+  color: #2857a4;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+.section-heading span i {
+  font-size: 40px;
+  color: #2857a4;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+.skills-display {
+  width: 70%;
+  height: 100px;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.skill-progress {
+  width: 9rem;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+  background-color: #d0d0d0;
+  font-size: 0.8rem;
+  color: white;
+  border-radius: 50px;
+}
+.skill-div {
+  padding: 0.3rem 0.6rem;
+  border-radius: 50px;
+  height: 100%;
+}
+.cplus {
+  background-color: #2155a4;
+  width: 40%;
+}
+.html {
+  background-color: #f85711;
+  width: 90%;
+}
+.css {
+  background-color: #93768c;
+  width: 85%;
+}
+.js {
+  background-color: #007173;
+  width: 50%;
+}
+.nodejs {
+  background-color: #2155a4;
+  width: 70%;
+}
+.mongodb {
+  background-color: #93768c;
+  width: 60%;
+}
+/* Work Experience */
+.timeline {
+  position: relative;
+  width: 75%;
+  margin: 10px 0;
+}
+.timeline-box {
+  position: relative;
+  width: 40%;
+  left: 5%;
+  min-height: 150px;
+  margin: 5px;
+  margin-bottom: 0;
+  text-align: left;
+}
+.timeline-box:nth-child(2n) {
+  left: 53%;
+}
+.timeline-box:nth-child(2n + 1)::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: -13%;
+  border-radius: 50%;
+  height: 0.5rem;
+  background-color: lightgray;
+  width: 0.5rem;
+  z-index: 1;
+}
+.timeline-box:nth-child(2n)::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -9.5%;
+  border-radius: 50%;
+  height: 0.5rem;
+  background-color: lightgray;
+  width: 0.5rem;
+  z-index: 1;
+}
+.timeline-divider {
+  position: absolute;
+  height: 75%;
+  width: 0;
+  border: 1px dashed lightgray;
+  top: 10%;
+  left: 50%;
+}
+.timeline-traveller {
+  position: sticky;
+  top: 30%;
+  transform: rotate(90deg);
+  color: lightgray;
+}
+.timeline-traveller > i {
+  color: gray !important;
+}
+.timeline-traveller-car {
+  position: sticky;
+  top: 30%;
+  z-index: 5;
+  transform: rotate(90deg);
+  left: -10% !important;
+}
+.timeline-traveller-car > i {
+  color: gray !important;
+}
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.first-section .company-logo {
+  width: 5rem;
+  height: 5rem;
+}
+.first-section .company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.first-section .details {
+  text-align: right;
+}
+.first-section h5 {
+  color: #2155a4;
+  margin: 0;
+}
+.first-section h6 {
+  color: #f85711;
+  margin: 0;
+}
+.first-section span {
+  font-size: 0.8rem;
+}
+.second-section {
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+}
+.second-section p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.responsive-design {
+  display: none;
+}
+
+.hamburger-icon {
+  position: relative;
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+.responsive-nav-menu {
+  display: none;
+}
+.projects-section {
+  margin-left: 1rem auto;
+}
+.img-card {
+  height: 17rem;
+  width: 17rem;
+  margin: 1rem auto;
+}
+.img-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#contact {
+  background: linear-gradient(rgb(52, 52, 240), rgb(30, 30, 109));
+}
+.contact-section {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 5rem;
+}
+.contact-form {
+  margin: 1rem auto;
+}
+.input-style {
+  background: none;
+  width: 28rem;
+  border: none;
+  border-bottom: 2px solid wheat;
+  margin: 0.9rem;
+}
+.address-section {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  text-wrap: wrap;
+}
+.address-section h6,
+i {
+  color: white;
+}
+.address-section p,
+span {
+  color: wheat;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+.social-media-link {
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-media-link li a i {
+  border-radius: 50%;
+  padding: 0.3rem;
+  color: white;
+  opacity: 0.9;
+}
+.social-media-link li a i:hover {
+  box-shadow: 0px 0px 20px white;
+  opacity: 0.9;
+}
+
+/* Ṛesponsive Design */
+@media (max-width: 768px) {
+  .horizontal-list {
+    display: none;
+  }
+  #body-header{
+    height: 50vh;
+  }
+.profile-img {
+  width: 12rem;
+  height: 12rem;
+  margin: auto;
+  margin-top: -12vh;
+}
+  #my-name {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .skills-display {
+    width: 70%;
+    height: 100px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .section-heading span,
+  i {
+    font-size: 2rem;
+  }
+  .timeline .timeline-divider .timeline-traveller i {
+    font-size: 1.2rem;
+  }
+  .timeline .timeline-divider .timeline-traveller-car i {
+    font-size: 1.2rem;
+  }
+
+  .responsive-design {
+    display: block;
+  }
+  .responsive-nav-menu {
+    list-style: none;
+    position: absolute;
+    right: 5%;
+    height: max-content;
+    width: 8rem;
+    text-align: end;
+    background-color: gainsboro;
+    color: black;
+    top: 7%;
+    margin-top: 10px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    padding: 12px;
+    display: none;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+  .responsive-nav-menu a {
+    top: 0;
+    text-decoration: none;
+    color: black;
+    padding: 0.4rem;
+  }
+  .responsive-nav-menu a:hover {
+    background-color: #f5f7fa;
+    color: #007bff;
+  }
+  .responsive-design:hover .responsive-nav-menu {
+    opacity: 1;
+    display: block;
+    transform: translateY(0);
+  }
+  .address-section i {
+    font-size: 1rem;
+  }
+  .input-style {
+    width: 100%;
+  }
+  .contact-section {
+    padding: 1rem;
+  }
+  .timeline-box {
+    left: 7%;
+    width: 85%;
+    margin-bottom: 0.5rem;
+  }
+  .timeline-box:nth-child(2n) {
+    left: 7.5%;
+  }
+  .timeline-divider {
+    left: 1%;
+    height: 80%;
+    top: 5%;
+  }
+  .timeline-box:nth-child(2n + 1)::after {
+    left: -9%;
+  }
+}
